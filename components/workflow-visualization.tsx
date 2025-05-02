@@ -15,9 +15,15 @@ export default function WorkflowVisualization({
 }: WorkflowVisualizationProps) {
   const stages = [
     {
+      id: "discovering_companies",
+      name: "Discovering Companies",
+      description: "Finding recently funded companies with Perplexity",
+      icon: "🔍",
+    },
+    {
       id: "fetching_leads",
-      name: "Fetching Leads",
-      description: "Collecting lead data from Apify",
+      name: "Enriching Leads",
+      description: "Adding company and contact details with Apify",
       icon: "📊",
     },
     {

@@ -10,8 +10,8 @@ const fontSans = FontSans({
 })
 
 export const metadata = {
-  title: "Outbound Sales Prospector",
-  description: "Automate your sales outreach workflow",
+  title: "ProspectAutopilot",
+  description: "Set your sales prospecting on autopilot.",
 }
 
 export default function RootLayout({

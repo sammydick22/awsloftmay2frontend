@@ -15,9 +15,9 @@ export default function Header({ onStart, onReset, isLoading, disabled }: Header
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
         <div>
           <h1 className="text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-600 mb-2">
-            Outbound Sales Prospector
+            ProspectAutopilot
           </h1>
-          <p className="text-lg text-gray-400">Automate your sales outreach workflow</p>
+          <p className="text-lg text-gray-400">Set your sales prospecting on autopilot.</p>
         </div>
 
         <div className="flex gap-4 mt-4 md:mt-0">

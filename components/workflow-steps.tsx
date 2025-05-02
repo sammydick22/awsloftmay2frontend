@@ -7,11 +7,12 @@ interface WorkflowStepsProps {
 
 export default function WorkflowSteps({ status, currentStep }: WorkflowStepsProps) {
   const steps = [
-    { id: 1, name: "Fetching leads from Apify" },
-    { id: 2, name: "Generating insights with Perplexity" },
-    { id: 3, name: "Drafting emails" },
-    { id: 4, name: "Polishing emails with DeepL" },
-    { id: 5, name: "Sending emails with Arcade" },
+    { id: 1, name: "Discovering companies with Perplexity" },
+    { id: 2, name: "Enriching leads with Apify" },
+    { id: 3, name: "Generating insights with Perplexity" },
+    { id: 4, name: "Drafting emails" },
+    { id: 5, name: "Polishing emails with DeepL" },
+    { id: 6, name: "Sending emails with Arcade" },
   ]
 
   return (

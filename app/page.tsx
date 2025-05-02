@@ -17,8 +17,9 @@ export default function Dashboard() {
   const [isEmailPreviewOpen, setIsEmailPreviewOpen] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
-  const [currentStage, setCurrentStage] = useState<string>("fetching_leads")
+  const [currentStage, setCurrentStage] = useState<string>("discovering_companies")
   const [stageProgress, setStageProgress] = useState<Record<string, number>>({
+    discovering_companies: 0,
     fetching_leads: 0,
     generating_insights: 0,
     drafting_emails: 0,
@@ -101,8 +102,9 @@ export default function Dashboard() {
       setWorkflowStatus("idle")
       setLeads([])
       // Reset workflow visualization data
-      setCurrentStage("fetching_leads")
+      setCurrentStage("discovering_companies")
       setStageProgress({
+        discovering_companies: 0,
         fetching_leads: 0,
         generating_insights: 0,
         drafting_emails: 0,
